@@ -45,7 +45,7 @@ td, th {
     display: block;
     top: 30;
     width: 600px;
-    height: 400px;
+    height: 300px;
     margin: auto;
     text-align: center;
     align-content: center;
@@ -54,14 +54,25 @@ td, th {
     
 }
 .signUp{
-      display: block;
+    display: block;
     top: 30;
     width: 600px;
-    height: auto;
+    height: 300px;
     margin: auto;
     text-align: center;
     align-content: center;
     background-color: blue;
     box-shadow: 5px 5px 10px black;
     
+}
+.resetpswd{
+    display: block;
+    top: 30;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    background-color: blue;
+    box-shadow: 5px 5px 10px black;  
 }
