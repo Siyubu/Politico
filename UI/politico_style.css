@@ -1,0 +1,43 @@
+body{
+    background: blue;
+}
+.register{
+    display: flex;
+    float: right;
+}
+h1,h3,h4{
+    display: block;
+    text-align: center;
+    background-color: blue;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.voted{
+    display: block;
+    width: 450px;;
+    margin: auto;
+    background-color: orange;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+}
+.user_profile{
+    
+    display: block;
+    top: 30;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    
+}
