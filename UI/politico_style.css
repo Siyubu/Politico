@@ -41,3 +41,15 @@ td, th {
     box-shadow: 5px 5px 10px black;
     
 }
+.login{
+    display: block;
+    top: 30;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    background-color: blue;
+    box-shadow: 5px 5px 10px black;
+    
+}
