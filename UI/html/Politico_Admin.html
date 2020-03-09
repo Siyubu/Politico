@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang= "en">
+    <head>
+         <meta charset="utf-8">
+        <title>politico's admin web page</title>
+        <link href="../css/politico_style.css" rel="stylesheet" type="text/css">   
+    </head>
+    
+    <body>
+        
+<div class="content">
+<h1>Voting the Right Candidate is Participating in your Country's Development</h1>
+        <form action="create_political_party">
+            <fieldset>
+                <legend><h4>Create a Politico Party :</h4></legend>
+                <label for="party_name">Name of Party</label>
+                <input id="party_name" type="text" name="party_name" value="FPR"><br><br>
+                
+                <label for="party_slogan">The Party Slogan </label>
+                <input id="party_slogan" type="text" name="party_slogan" value="leadership and democracy starts from within"><br><br>
+                
+                <label for="party_logo">The Party's Logo </label>
+                <input id="party_logo" type="file" name="party_logo" value="three"><br><br>
+                
+                <label for="submit_created_party">Submit the Party Details</label>
+                <input id="submit_created_party" class="submit" type="submit">
+                <br>
+            </fieldset>
+        </form> 
+        
+        <br>
+        <br>
+        <form action="edit_political_party">
+            <fieldset>
+                <legend><h4>Politico Party to be Edited :</h4></legend>
+                <p>Select the Name of a Party to Edit:</p>
+                
+                <select id="to_edit" name="to_edit" >
+                    <option value="FPR">FPR</option>
+                    <option value="Green Party">Green Party</option>
+                </select><br><br>
+                
+                <label for="edit_party_name">Name of Party</label>
+                <input id="edit_party_name" type="text" name="party_name" value="Name to be eddited"><br><br>
+                
+                <label for="edit_party_slogan">The Party Slogan </label>
+                <input id="edit_party_slogan" type="text" name="party_slogan" value="Slogan to be edited"><br><br>
+                
+                <label for="edit party_logo">Choose new Party's Logo </label>
+                <input id="party_logo" type="file" name="party_logo" value="Choose new Party's Logo"><br><br>
+                
+                
+                
+                <label for="submit_toEdit_party" class="submit">Submit the  Party's new information</label>
+                <input id="submit_toDelete_party" type="submit">
+                
+                
+            </fieldset>
+        </form>
+         
+        
+        <br>
+        <br>
+         <form action="delete_political_party">
+            <fieldset>
+                <legend><h4>Politico Party to be Deleted :</h4></legend>
+                <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+                <p>Choose Names of a Party to Delete:</p>
+                
+                <select id="to_delete" name="to_delete" multiple>
+                    <option value="FPR">FPR</option>
+                    <option value="Green Party">Green Party</option>
+                </select><br><br>
+                
+                
+                <label for="submit_toDelete_party">Submit the  Party  to be deleted</label>
+                <input id="submit_toDelete_party"  class="submit"  type="submit">
+                
+                
+            </fieldset>
+        </form>
+        
+        <br>
+        <br>
+        <form action="Create_government_office">
+            <fieldset>
+                <legend><h4>Create a government office, :</h4></legend>
+                
+                <p>Create One Government Office at a Time </p>
+                <label for="office_name">Office Name</label>
+                <input id="office_name" type="text" name="office_name" value="Ministry Office"><br><br>
+                <label for="submit_gov_office">Submit the created Office</label>
+                <input id="submit_gov_office" class="submit" type="submit">
+                <br>
+            </fieldset>
+        </form> 
+
+        </div>
+    </body>
+</html>
