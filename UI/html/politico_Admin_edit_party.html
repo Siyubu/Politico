@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang= "en">
+    <head>
+         <meta charset="utf-8">
+        <title>politico's admin create a political page </title>
+        <link href="../css/politico_style.css" rel="stylesheet" type="text/css">   
+    </head>
+    
+    <body>
+        
+<div class="content">
+<h1>Voting the Right Candidate is Participating in your Country's Development</h1>
+        <form action="edit_political_party">
+            <fieldset>
+                <legend><h4>Politico Party to be Edited :</h4></legend>
+                <p>Select the Name of a Party to Edit:</p>
+                
+                <select id="to_edit" name="to_edit" >
+                    <option value="FPR">FPR</option>
+                    <option value="Green Party">Green Party</option>
+                </select><br><br>
+                
+                <label for="edit_party_name">Name of Party</label>
+                <input id="edit_party_name" type="text" name="party_name" value="Name to be eddited"><br><br>
+                
+                <label for="edit_party_slogan">The Party Slogan </label>
+                <input id="edit_party_slogan" type="text" name="party_slogan" value="Slogan to be edited"><br><br>
+                
+                <label for="edit party_logo">Choose new Party's Logo </label>
+                <input id="party_logo" type="file" name="party_logo" value="Choose new Party's Logo"><br><br>
+                
+                
+                
+                <label for="submit_toEdit_party" class="submit">Submit the  Party's new information</label>
+                <input id="submit_toDelete_party" type="submit">
+                
+                
+            </fieldset>
+        </form>
+        </div>
+    </body>

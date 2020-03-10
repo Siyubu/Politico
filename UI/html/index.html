@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang= "en">
+    <head>
+         <meta charset="utf-8">
+        <title>politico web page</title>
+        <link href="../css/politico_style.css" rel="stylesheet" type="text/css">
+        <link href="../css/sign_up_style.css" rel="stylesheet" type="text/css">
+         
+    </head>
+    <body>
+        <div class="btns">
+        <input type=button onClick="location.href='politico_login.html'" value="Login">
+        <input type=button onClick="location.href='politico_Admin.html'" value="Admin">
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>Voting the Right Candidate is Participating in your Country's Development</h1>
+        <div class="signUp">
+        <h4>Create Your Account</h4>
+        <form action="signup">
+            
+            <label for="fname">Enter Your Firstname</label>
+             <input id="fname" type="text" name="fname" value="First Name"><br><br>
+            
+             <label for="lname">Enter Your Lastname</label>
+             <input id="lname" type="text" name="lname" value="Last Name"><br><br>
+            
+             <label for="phonenumb">Enter Your Phone Number</label>
+             <input type="tel" id="phonenumb" name="phonenumb" placeholder="0785-545-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+            
+            
+           <label for="signup">Enter Your Email</label>
+            <input id="signup" type="text" name="user_email" value="abc@gmail.com"><br><br>
+        
+           <label for="signup_password">Enter Your PassWord</label>
+                <input id="signup_password" type="password" name="user_email" value=""><br><br>
+            
+            <label for="confirm_password">Confirm Your PassWord</label>
+                <input id="confirm_password" type="password" name="user_email" value=""><br><br>
+            
+        
+         <button type="submit">Sign Up</button>
+        </form>
+        </div>
+        
+    </body>

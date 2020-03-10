@@ -1,13 +1,19 @@
 body{
-    background: #663399; /* Beccapurple */
+    background: hsl(180, 90%, 35%); /* Beccapurple */
 	margin: 0;
 }
+fieldset{
+    width:60%;
+    align-content: center;
+    justify-content: center;
+}
 .content{
-    background:black;
+    background: black;
     width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 2.5% 2.5% 0;
+    margin-bottom: auto;
+	padding: 2.5% 2.5% 10%;
 	line-height: 1.8;
     color:#8D99AE;
    
@@ -21,7 +27,7 @@ h1,h3,h4{
     font-family: 'Caveat', cursive;
     display: block;
     text-align: center;
-    color:aqua;
+    color:white;
 }
 
 table {
@@ -50,8 +56,9 @@ td, th {
     width: 600px;
     height: 500px;
     margin: auto;
+    padding: 2.5% 2.5% 2.5%;
     text-align: center;
-    background-color:blue; 
+    background-color:hsl(180, 80%, 25%);; 
     box-shadow: 5px 5px 10px black;
     
 }
@@ -61,9 +68,10 @@ td, th {
     width: 600px;
     height: 300px;
     margin: auto;
+    padding: 2.5% 2.5% 2.5%;
     text-align: center;
     align-content: center;
-    background-color: blue;
+    background-color: hsl(180, 80%, 25%);;
     box-shadow: 5px 5px 10px black;
     
 }
@@ -73,9 +81,10 @@ td, th {
     width: 600px;
     height: 300px;
     margin: auto;
+    padding: 2.5% 2.5% 2.5%;
     text-align: center;
     align-content: center;
-    background-color: blue;
+    background-color:hsl(180, 80%, 25%);
     box-shadow: 5px 5px 10px black;
     
 }
@@ -85,8 +94,9 @@ td, th {
     width: 600px;
     height: 300px;
     margin: auto;
+    padding: 2.5% 2.5% 2.5%;
     text-align: center;
     align-content: center;
-    background-color: blue;
+    background-color: hsl(180, 80%, 25%);;
     box-shadow: 5px 5px 10px black;  
 }
