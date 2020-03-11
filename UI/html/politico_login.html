@@ -3,7 +3,6 @@
     <head>
          <meta charset="utf-8">
         <title>politico web page</title>
-        <link rel="css/stylesheet" href="politico_style.css">
         <link href="../css/politico_style.css" rel="stylesheet" type="text/css">
 
 
@@ -17,13 +16,20 @@
         <h4>Log in into your Account</h4>
         <form action="login">
            <label for="user_email">Enter Your Email</label>
-                <input id="user_email" type="text" name="user_email" value="abc@gmail.com"><br><br>
+                <input id="user_email" type="text" name="user_email" placeholder="abc@gmail.com"><br><br>
         
-        <label for="user_password">Enter Your Email</label>
-                <input id="user_password" type="password" name="user_email" value="abc@gmail.com"><br><br>
+        <label for="user_password">Enter Your Password</label>
+                <input id="user_password" type="password" name="user_email" placeholder="**********"><br><br>
+            
+             <p ><a id="pswd_reset" href="politico_password_reset.html">Reset your password</a></p>
+            
+            <br>
         
-         <button type="submit">Log in</button>
+          <input type=button onClick="location.href='politico_user.html'" value="Login">
         </form>
+            <br>
+            
+           
         </div>
     </body>
 </html>
