@@ -2,16 +2,17 @@
 <html lang= "en">
     <head>
          <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>politico web page</title>
         <link href="../css/politico_style.css" rel="stylesheet" type="text/css">
         <link href="../css/sign_up_style.css" rel="stylesheet" type="text/css">
          
     </head>
     <body>
-        <div class="btns">
-        <input type=button onClick="location.href='politico_login.html'" value="Login">
+        <div id="btns">
+        <input id="loginbtn" class="btn" type=button onClick="location.href='politico_login.html'" value="Login">
             
-        <input type=button onClick="location.href='politico_Admin.html'" value="Admin">
+        <input id="adminbtn" class="btn" type=button onClick="location.href='politico_Admin.html'" value="Admin">
         </div>
         <br>
         <br>
@@ -21,27 +22,27 @@
         <h4>Create Your Account</h4>
         <form action="signup">
             
-            <label for="fname">Enter Your Firstname</label>
-             <input id="fname" type="text" name="fname" value="First Name"><br><br>
+            <label for="fname">Enter Your Firstname</label><br>
+             <input id="fname" type="text" name="fname" placeholder="First Name"><br><br>
             
-             <label for="lname">Enter Your Lastname</label>
-             <input id="lname" type="text" name="lname" value="Last Name"><br><br>
+             <label for="lname">Enter Your Lastname</label><br>
+             <input id="lname" type="text" name="lname" placeholder="Last Name"><br><br>
             
-             <label for="phonenumb">Enter Your Phone Number</label>
+             <label for="phonenumb">Enter Phone Number</label><br>
              <input type="tel" id="phonenumb" name="phonenumb" placeholder="0785-545-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
             
             
-           <label for="signup">Enter Your Email</label>
+           <label for="signup">Enter Your Email</label><br>
             <input id="signup" type="text" name="user_email" placeholder="abc@gmail.com"><br><br>
         
-           <label for="signup_password">Enter Your PassWord</label>
-                <input id="signup_password" type="password" name="user_email" placeholder="*********"><br><br>
+           <label for="signup_password">Enter Your PassWord</label><br>
+                <input id="signup_password" type="password" name="user_email" placeholder=" "><br><br>
             
-            <label for="confirm_password">Confirm Your PassWord</label>
-                <input id="confirm_password" type="password" name="user_email" placeholder="*********"><br><br>
+            <label for="confirm_password">Confirm Your PassWord</label><br>
+                <input id="confirm_password" type="password" name="user_email" placeholder=" "><br><br>
             
         
-         <button type="submit">Sign Up</button>
+         <button id="ind_submit_btn" type="submit">Sign Up</button>
         </form>
         </div>
         
