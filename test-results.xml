@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0010" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2020-03-13T16:25:19" tests="1" time="0.0010" failures="1">
+    <testcase name=" should respond with JSON object containing timestamp" time="0.0010" classname=" should respond with JSON object containing timestamp">
+      <failure message="Cannot read property &apos;be&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'be' of undefined
+    at Context.<anonymous> (server\tests\first.test.js:3:12)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
