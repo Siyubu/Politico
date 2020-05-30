@@ -3,8 +3,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const createError=require('http-errors');
-// set up database
-//const mongoose = require("mongoose");
 // Import necessary middlewares
 const bodyParser = require('body-parser');
 

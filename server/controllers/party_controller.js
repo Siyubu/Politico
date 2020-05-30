@@ -41,11 +41,11 @@ const id=parseInt(req.params.party_id);
     const result=getAllPartiesModel();
     result.then((data)=>{
       res.status(200);
-      //   res.json({
-      //   status: 'Integer',
-      //   data: data
-      // })
-      res.render('../ui/html/pages/politico_Admin_create_party.ejs',{parties:data})
+        res.json({
+        status: 'Integer',
+        data: data
+      })
+      //res.render('../ui/html/pages/politico_Admin_create_party.ejs',{parties:data})
     })
     .catch((err)=>{
       res.status(400).json(err);

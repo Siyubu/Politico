@@ -13,11 +13,11 @@ const {registerCandidatesController,deleteCandidateController, getCandidateDetai
         // });
 
 
-        router.get('/addcand',(req,res)=>{
+        // router.get('/addcand',(req,res)=>{
             
-           res.render('../ui/html/pages/politico_Admin_create_gvmt_office.ejs')
+        //    res.render('../ui/html/pages/politico_Admin_create_gvmt_office.ejs')
    
-        });
+        // });
 
 //post method
 router.post('/', (req, res,next)=>{
