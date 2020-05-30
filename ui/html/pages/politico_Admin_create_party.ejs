@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang= "en">
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>politico's admin create a political page </title>
+        <link href="../css/politico_style.css" rel="stylesheet" type="text/css">
+        <link href="../css/create_party.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+<h1>Voting the Right Candidate is Participating in your Country's Development</h1>
+        <form action="http://localhost:3000/parties" method="POST">
+            <fieldset>
+                <legend><h4>Create a Politico Party :</h4></legend>
+
+                <label for="party_id">id of Party</label>
+                <input id="party_id" type="number" name="id" placeholder="FPR"><br><br>
+
+                <label for="party_name">Name of Party</label>
+                <input id="party_name" type="text" name="name" placeholder="FPR"><br><br>
+                
+                <label for="party_slogan">The Party Slogan </label>
+                <input id="party_slogan" type="text" name="hqaddress" placeholder="Head Quorter Address"><br><br>
+                
+                <label for="party_logo">The Party's Logo </label>
+                <input id="party_logo" type="text" name="logourl" placeholder="three"><br><br>
+                
+                <label for="submit_created_party">Submit the Party Details</label>
+                <input id="submit_created_party" class="submit" type="submit">
+                <br>
+            </fieldset>
+        </form> 
+
+        <h3> All Political Party: </h3>
+        <br>
+        <ul>
+        <% for(var i = 0;i< parties.length;i++) { %>
+        <li><%= parties[i].name %><br><%= parties[i].hqaddress %><br> <%= parties[i].logourl %></li><br>
+        <% } %>
+        </ul>
+        <!-- <%= parties %> -->
+    </body>
