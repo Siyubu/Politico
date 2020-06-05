@@ -23,19 +23,15 @@ result.then(data=>
 const getPartyByIdController=(req,res,next)=>{
 const id=parseInt(req.params.party_id);
   const result=getPartyByIdModel(id);
-  result.then(()=>{
+  result.then((data)=>{
     res.status(200);
-    res.render
-
-
-
-
-
+    res.json({
+      status: 'Integer',
+      data:data
+    })
+  //  res.render
   })
 }
-
-
-
 
   const getAllPartiesController=(req,res,next)=>{
     const result=getAllPartiesModel();
@@ -72,6 +68,7 @@ const deletePartyController=(req,res,next)=>{
     return next(err);
   })
 }
+exports.getPartyByIdController=getPartyByIdController;
 exports.registerPartyController=registerPartyController;
 exports.getAllPartiesController=getAllPartiesController;
 exports.deletePartyController=deletePartyController;

@@ -13,7 +13,7 @@ const candidate=require("./candidate_route");
              //res.render('../ui/html/pages/politico_Admin_create_gvmt_office.ejs')
             }); 
 
-            router.use('/Office',officeRouter());
+            router.use('/offices',officeRouter());
             router.use('/parties',partyRouter());
             router.use('/Petition',petitionRouter());
             router.use('/User',userRouter());
