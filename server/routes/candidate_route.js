@@ -1,6 +1,7 @@
 const express= require('express');
 const router=express.Router();
 const {registerCandidatesController,deleteCandidateController, getCandidateDetailController, getCandidateController} = require('../controllers/candidate_controller');
+const {isAdmin}=require('../controllers/admin_controller')
 //const test = require('../../ui/html/')
 //const getCandidateDetailController = require('../controllers/candidate_controller');
 
@@ -20,11 +21,11 @@ const {registerCandidatesController,deleteCandidateController, getCandidateDetai
         // });
 
 //post method
-router.post('/', (req, res,next)=>{
+router.post('/',isAdmin, (req, res,next)=>{
     try{
         console.log("office " + req.body.id);
         registerCandidatesController(req.body.id, req.body.office, req.body.party, req.body.candidate);
-       return res.status(200).send('Candidate is successfuly registered!!');
+      // return res.status(200).send('Candidate is successfuly registered!!');
     }
     catch(err){
         return next(err);

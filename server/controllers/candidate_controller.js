@@ -27,7 +27,7 @@ const getCandidateController=(req, res)=>{
   
 //   return new Promise((resolve, reject)=>
 // {
-  const resul= getCandidateModel(candID);
+const resul= getCandidateModel(candID);
   
 resul.then(data=>
   {res.status(200)
@@ -48,6 +48,12 @@ console.log(err);
 
 }
 
+
+//POST /office/<office-id>/register
+
+const registeruserAsCandidate=(req,res,next)=>{
+
+}
 
 
 
