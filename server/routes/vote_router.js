@@ -1,7 +1,7 @@
 const express= require('express');
 const router=express.Router();
 
-const {deleteVoteController}=require('../controllers/voter_controller');
+const {deleteVoteController,registerVoteController}=require('../controllers/voter_controller');
 
 
     module.exports=()=>{
@@ -11,5 +11,6 @@ const {deleteVoteController}=require('../controllers/voter_controller');
             });
             
             router.delete('/:id',deleteVoteController)
+            router.post('/', registerVoteController)
 return router;
         };
