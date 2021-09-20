@@ -21,7 +21,6 @@ const signingUpUserModel=(id,names,email,pswd1)=>{
 }
 //POST /auth/login
 const signingInUserModel=(names)=>{
-  
     return new Promise((resolve,reject)=>{
         console.log("In Model " + names)
 

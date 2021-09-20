@@ -31,7 +31,6 @@ const signingUpUserController=(req,res,next)=>{
     })
 }
 const signingInUserController=(req,res,next)=>{
-
     const names=req.body.names;
     console.log("!!!!!!!!!!!!!!!!!!!!! "+ req.body.password)
     const result=signingInUserModel(names);
