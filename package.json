@@ -23,7 +23,7 @@
     "chai-as-promised": "^7.1.1",
     "chai-http": "^4.3.0",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-errors": "^1.7.3",
     "mocha": "^7.1.0",
     "mongodb": "^3.5.6",
